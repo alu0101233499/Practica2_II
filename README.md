@@ -23,11 +23,16 @@ He asignado una masa de 10 kg al cubo y de 100 kg a la esfera. Decidí poner enc
 ![Esfera 10 veces más pesada](images/Apartadod.gif)
 
 ### Apartado e: La esfera tiene físicas y el cubo es de tipo IsTrigger.
-Para este apartado retiré el componente físico al cubo y le asigné un valor positivo a la propiedad IsTrigger dentro del Box Collider. De esta forma, se ve como en la escena, la bola, que está por encima, traspasa al cubo al caer.
+Para este apartado retiré el componente físico al cubo y le asigné un valor positivo a la propiedad *IsTrigger* dentro del **Box Collider**. De esta forma, se ve como en la escena, la bola, que está por encima, traspasa al cubo al caer.
 
 ![Cubo de tipo IsTrigger](images/Apartadoe.gif)
 
 ### Apartado f: La esfera tiene físicas, el cubo es de tipo IsTrigger y tiene físicas.
-En este apartado, tan sólo tuve que añadir de nuevo la componente de RigidBody al cubo, dejando marcada la casilla de IsTrigger. Al ejecutar, ambos objetos caen, pero el cubo traspasa el plano.
+En este apartado, tan sólo tuve que añadir de nuevo la componente de **RigidBody** al cubo, dejando marcada la casilla de *IsTrigger*. Al ejecutar, ambos objetos caen, pero el cubo traspasa el plano.
 
 ![Cubo de tipo IsTrigger y físico](images/Apartadof.gif)
+
+### Apartado g: La esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo, se impide la rotación del cubo sobre el plano XZ.
+Para completar este ejercicio, se colocan las configuraciones del apartado d y en la componente **RigidBody** del cubo, se añade una restricción de rotación a los ejes X y Z. De esta forma, la ejecución es similar a la del apartado d, salvo que la esfera no cae por el borde del cubo, puesto que se ha restringido una posible rotación que hacía que se moviese la bola.
+
+![Restricción de rotación](images/Apartadog.gif)
