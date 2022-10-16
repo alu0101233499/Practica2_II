@@ -21,3 +21,13 @@ Para este apartado, he puesto un objeto encima de otro para ver que ocurre. Si l
 He asignado una masa de 10 kg al cubo y de 100 kg a la esfera. Decidí poner encima al objeto más pesado. Cuando ejecuté la escena vi que la esfera cae encima del cubo y poco a poco va desplazándose hacia un lado hasta caer sobre el plano y, más tarde, salir de éste.
 
 ![Esfera 10 veces más pesada](images/Apartadod.gif)
+
+### Apartado e: La esfera tiene físicas y el cubo es de tipo IsTrigger.
+Para este apartado retiré el componente físico al cubo y le asigné un valor positivo a la propiedad IsTrigger dentro del Box Collider. De esta forma, se ve como en la escena, la bola, que está por encima, traspasa al cubo al caer.
+
+![Cubo de tipo IsTrigger](images/Apartadoe.gif)
+
+### Apartado f: La esfera tiene físicas, el cubo es de tipo IsTrigger y tiene físicas.
+En este apartado, tan sólo tuve que añadir de nuevo la componente de RigidBody al cubo, dejando marcada la casilla de IsTrigger. Al ejecutar, ambos objetos caen, pero el cubo traspasa el plano.
+
+![Cubo de tipo IsTrigger y físico](images/Apartadof.gif)
