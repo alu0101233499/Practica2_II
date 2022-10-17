@@ -34,7 +34,7 @@ public class Character : MonoBehaviour
         // Rotación.
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotation * Time.deltaTime, 0);
 
-        // Alejar cilindros de tipo A al pulsar el espacio..
+        // Alejar cilindros de tipo A al pulsar el espacio.
         if (Input.GetKeyDown("space"))
         {
             // Recuperación de todos los cilindros de tipo A.
